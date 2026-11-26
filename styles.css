@@ -128,20 +128,6 @@ h2 {
   margin: 0 auto 15px;
 }
 
-.habilidades {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 25px;
-}
-
-.habilidades li {
-  padding: 5px 20px;
-  border: 2px solid var(--color-principal);
-  border-radius: 20px;
-}
-
 /* ===== Portafolio ===== */
 .portafolio {
   background-color: var(--color-fondo);
