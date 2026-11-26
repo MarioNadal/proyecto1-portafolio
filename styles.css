@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-claro);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ===== Variables ===== */
+:root {
+  --color-principal: #38bdf8;
+  --color-oscuro: #1e293b;
+  --color-claro: #f8fafc;
+  --color-gris: #64748b;
+  --color-fondo: #e0f2fe;
+  --fuente: "Poppins", sans-serif;
+  --radio: 10px;
+}
+
+/* ===== General ===== */
+body {
+  font-family: var(--fuente);
+  color: var(--color-oscuro);
+  background-color: var(--color-claro);
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 20px;
+  background-color: var(--color-principal);
+  color: var(--color-claro);
+  border: none;
+  border-radius: var(--radio);
+  font-family: var(--fuente);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: var(--color-oscuro);
+}
+
+/* ===== Header y navegación ===== */
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: var(--color-oscuro);
+  color: var(--color-claro);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--color-principal);
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a:hover {
+  color: var(--color-principal);
+}
+
+/* ===== Hero ===== */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  background-color: var(--color-fondo);
+}
+
+.hero-texto {
+  max-width: 750px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: var(--color-principal);
+}
+
+/* ===== Sobre mí ===== */
+.sobre-mi p {
+  max-width: 700px;
+  margin: 0 auto 15px;
+}
+
+.habilidades {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.habilidades li {
+  padding: 5px 20px;
+  border: 2px solid var(--color-principal);
+  border-radius: 20px;
+}
+
+/* ===== Portafolio ===== */
+.portafolio {
+  background-color: var(--color-fondo);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.proyecto {
+  background-color: var(--color-claro);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+}
+
+.proyecto h3,
+.proyecto p {
+  padding: 0 15px;
+}
+
+.proyecto h3 {
+  margin-top: 15px;
+}
+
+.proyecto p {
+  color: var(--color-gris);
+  margin-bottom: 15px;
+}
+
+/* ===== Contacto ===== */
+.contacto > p {
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.formulario label {
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--color-gris);
+  border-radius: var(--radio);
+  font-family: var(--fuente);
+  font-size: 15px;
+}
+
+.formulario .boton {
+  align-self: flex-start;
+}
+
+/* ===== Footer ===== */
+.pie {
+  padding: 30px 10%;
+  background-color: var(--color-oscuro);
+  color: var(--color-claro);
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.redes a:hover {
+  color: var(--color-principal);
+}
+
+/* ===== Media queries ===== */
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* móvil */
+@media screen and (max-width: 640px) {
+  section {
+    padding: 40px 20px;
+  }
+
+  .cabecera {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .menu {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}

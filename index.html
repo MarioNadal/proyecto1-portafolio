@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal de Mario Nadal, estudiante de desarrollo web y de aplicaciones multiplataforma.">
+  <meta name="author" content="Mario Nadal">
+  <meta name="keywords" content="portafolio, desarrollo web, DAM, HTML, CSS, baloncesto, Mario Nadal">
+  <title>Mario Nadal | Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a href="#inicio" class="logo">Mario<span>.dev</span></a>
+    <nav>
+      <ul class="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h1>Hola, soy Mario y me gusta <span>crear webs y apps</span></h1>
+        <p>Estudiante de desarrollo web y de aplicaciones multiplataforma. Fuera de la pantalla, baloncesto y jota.</p>
+        <a href="#portafolio" class="boton">Ver proyectos</a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Me llamo Mario Nadal, tengo 22 años y soy de Jaca. Estudio desarrollo web y desarrollo de aplicaciones multiplataforma, y me gusta crear proyectos que tengan que ver con lo que vivo cada día.</p>
+      <p>El baloncesto es mi gran pasión: juego y además soy entrenador. También bailo jota en el Grupo Folklórico Alto Aragón de mi pueblo.</p>
+      <ul class="habilidades">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="portafolio" class="portafolio">
+      <h2>Portafolio</h2>
+      <div class="galeria">
+        <article class="proyecto">
+          <img src="https://placehold.co/600x400/38bdf8/ffffff?text=Kortline" alt="Imagen del proyecto Kortline">
+          <h3>Kortline</h3>
+          <p>Aplicación para clubes de baloncesto: control de asistencia, partidos y estadísticas.</p>
+        </article>
+        <article class="proyecto">
+          <img src="https://placehold.co/600x400/f97316/ffffff?text=Vecinos" alt="Imagen de la aplicación de gestión de comunidades de vecinos">
+          <h3>Gestión de comunidades de vecinos</h3>
+          <p>Aplicación para organizar una comunidad de vecinos: avisos, incidencias y reuniones.</p>
+        </article>
+        <article class="proyecto">
+          <img src="https://placehold.co/600x400/22c55e/ffffff?text=Pronosticos" alt="Imagen del proyecto de pronósticos de baloncesto">
+          <h3>Pronósticos de baloncesto</h3>
+          <p>Web para pronosticar los resultados de los partidos y comparar aciertos con tus amigos.</p>
+        </article>
+        <article class="proyecto">
+          <img src="https://placehold.co/600x400/a855f7/ffffff?text=Fantasy" alt="Imagen del fantasy de baloncesto">
+          <h3>Fantasy de baloncesto</h3>
+          <p>Juego en el que montas tu equipo con jugadores reales y sumas puntos según cómo jueguen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>¿Quieres decirme algo? Rellena el formulario.</p>
+      <form class="formulario" action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+        <button type="submit" class="boton">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <ul class="redes">
+      <li><a href="https://github.com/MarioNadal" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/mario-nadal-ara-57a5b8273/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/nadalymario/" target="_blank">Instagram</a></li>
+    </ul>
+    <p>&copy; 2026 Mario Nadal. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
